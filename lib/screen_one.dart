@@ -1,3 +1,4 @@
+import 'package:bootcamp/ahsan.dart';
 import 'package:bootcamp/baneen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -44,17 +45,22 @@ class _screenOne_STFState extends State<screenOne_STF> {
                 ),
               ),
             ),
-            Container(
-              color: Colors.purpleAccent,
-              height: 255,
-              width: 400,
-              child: Center(
-                child: Text(
-                  "Hello Ahsan",
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.red,
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Ahsan()));
+              },
+              child: Container(
+                color: Colors.purpleAccent,
+                height: 255,
+                width: 400,
+                child: Center(
+                  child: Text(
+                    "Hello Ahsan",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red,
+                    ),
                   ),
                 ),
               ),
