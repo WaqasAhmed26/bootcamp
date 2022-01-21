@@ -1,3 +1,4 @@
+import 'package:bootcamp/ahsan.dart';
 import 'package:flutter/material.dart';
 
 class newDesign extends StatelessWidget {
@@ -23,58 +24,97 @@ class _newDesign_STFState extends State<newDesign_STF> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
+            Container(
+              height: height * 0.3,
+              color: Colors.purpleAccent,
+              child: Center(
+                child: Text(
+                  "Hello Flutter",
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  width: width * 0.5,
-                  height: height * 0.3,
+                  width: width * 0.4,
+                  height: height * 0.2,
                   color: Colors.red,
-                ),
-                Container(
-                  width: width * 0.5,
-                  height: height * 0.3,
-                  color: Colors.green,
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Container(
-                  width: width * 0.5,
-                  height: height * 0.3,
-                  color: Colors.yellowAccent,
-                ),
-                Container(
-                  width: width * 0.5,
-                  height: height * 0.3,
-                  color: Colors.blueGrey,
-                ),
-              ],
-            ),
-            Row(
-              children: [
-                Container(
-                  width: width * 0.5,
-                  height: height * 0.3,
-                  color: Colors.blueAccent,
-                ),
-                Container(
-                  width: width * 0.5,
-                  height: height * 0.3,
-                  color: Colors.lightGreenAccent,
                   child: Center(
-                      child: Text(
-                          "Box-6",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25,
-                          color: Colors.red,
-                        ),
+                    child: Text(
+                      "Box-1",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.white,
                       ),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: width * 0.4,
+                  height: height * 0.2,
+                  color: Colors.green,
+                  child: Center(
+                    child: Text(
+                      "Box-2",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
                   ),
                 ),
               ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(
+                  width: width * 0.4,
+                  height: height * 0.2,
+                  color: Colors.greenAccent,
+                  child: Center(
+                    child: Text(
+                      "Box-3",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: width * 0.4,
+                  height: height * 0.2,
+                  color: Colors.yellowAccent,
+                  child: Center(
+                    child: Text(
+                      "Box-4",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            ElevatedButton(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Ahsan()));
+              },
+              child: Text("Sign in"),
             ),
           ],
         ),
