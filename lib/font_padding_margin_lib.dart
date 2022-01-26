@@ -47,7 +47,8 @@ class _fontPadMarLib_STFState extends State<fontPadMarLib_STF> {
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
-                  fontFamily: "poppins"
+                  fontFamily: "poppins",
+                  fontWeight: FontWeight.w200,
                 ),
               ),
             ),
